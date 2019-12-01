@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layout_shoulder_left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <com.mindertech.testtemperature.AAChartCoreLib.AAChartConfiger.AAChartView
+                android:id="@+id/chart_shoulder_left"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/clear"
+                />
+        </LinearLayout>
+
+        <View style="@style/line_h"/>
+
+        <LinearLayout
+            android:id="@+id/layout_shoulder_right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <com.mindertech.testtemperature.AAChartCoreLib.AAChartConfiger.AAChartView
+                android:id="@+id/chart_shoulder_right"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+        </LinearLayout>
+
+        <View style="@style/line_h"/>
+
+        <LinearLayout
+            android:id="@+id/layout_arm_left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <com.mindertech.testtemperature.AAChartCoreLib.AAChartConfiger.AAChartView
+                android:id="@+id/chart_arm_left"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+        </LinearLayout>
+
+        <View style="@style/line_h"/>
+
+        <LinearLayout
+            android:id="@+id/layout_arm_right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <com.mindertech.testtemperature.AAChartCoreLib.AAChartConfiger.AAChartView
+                android:id="@+id/chart_arm_right"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
